@@ -56,6 +56,6 @@ Publications
   
 Service
 ======
-Peer reviewer for Software: Practice and Experience (SPE-22-0289) 2022
-Artifact Evaluation committee for Principles and Practice of Parallel Programming (PPoPP) 2022
-Artifact Evaluation committee for Principles and Practice of Parallel Programming (PPoPP) 2021
+* Peer reviewer for Software: Practice and Experience (SPE-22-0289) 2022
+* Artifact Evaluation committee for Principles and Practice of Parallel Programming (PPoPP) 2022
+* Artifact Evaluation committee for Principles and Practice of Parallel Programming (PPoPP) 2021
