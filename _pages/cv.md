@@ -42,18 +42,20 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Teaching
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
-Service and leadership
+Service
 ======
-* Currently signed in to 43 different slack teams
+Peer reviewer for Software: Practice and Experience (SPE-22-0289) 2022
+Artifact Evaluation committee for Principles and Practice of Parallel Programming (PPoPP) 2022
+Artifact Evaluation committee for Principles and Practice of Parallel Programming (PPoPP) 2021
