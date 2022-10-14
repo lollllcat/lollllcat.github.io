@@ -87,7 +87,7 @@ author:
   employer         :
 #   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=Onvm2JcAAAAJ&hl=en"
-  email            :
+  email            : zhizhouzhang at ucsb.edu
 #   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+#   github           : "academicpages"
   google_plus      :
   keybase          :
   instagram        :
