@@ -13,7 +13,7 @@ Education
 ======
 * B.S. in Computer Science, University of Rochester, 2018
 * M.S. in Computer Science, University of California Santa Barbara, 2021
-* Ph.D in Computer Science, University of California Santa Barbara, 2022 (expected)
+* Ph.D. in Computer Science, University of California Santa Barbara, 2022 (expected)
 
 Work experience
 ======
