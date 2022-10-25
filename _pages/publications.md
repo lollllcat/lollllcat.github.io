@@ -4,6 +4,8 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+* A Prediction System Service\
+Zhizhou Zhang, Alvin Glova, Timothy Sherwood, and Jonathan Balkind. Proceedings of the International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2023.
 
 * [Establishing Cooperative Computation with Hardware Embassies](https://jbalkind.github.io/docs/glova-2022seed-embassy.pdf)\
 Alvin Oliver Glova, Yukai Yang, Yiyao Wan, **Zhizhou Zhang**, George Michelogiannakis, Jonathan Balkind, and Timothy Sherwood. In 2022 International Symposium on Secure and Private Execution Environment Design (SEED).
