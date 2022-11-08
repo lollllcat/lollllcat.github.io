@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, University of Rochester, 2018
-* M.S. in Computer Science, University of California Santa Barbara, 2021
 * Ph.D. in Computer Science, University of California Santa Barbara, 2022 (expected)
+* M.S. in Computer Science, University of California Santa Barbara, 2021
+* B.S. in Computer Science, University of Rochester, 2018
 
 <!-- Work experience
 ======
@@ -56,6 +56,7 @@ Education
   
 Service
 ======
+* Artifact Evaluation committee for Principles and Practice of Parallel Programming ([PPoPP](https://ppopp23.sigplan.org/)) 2023
 * Peer reviewer for Software: Practice and Experience (SPE-22-0289) 2022
 * Artifact Evaluation committee for Principles and Practice of Parallel Programming ([PPoPP](https://ppopp22.sigplan.org/)) 2022
 * Artifact Evaluation committee for Principles and Practice of Parallel Programming ([PPoPP](https://ppopp21.sigplan.org/)) 2021
