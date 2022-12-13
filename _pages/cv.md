@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Computer Science, University of California Santa Barbara, 2022 (expected)
+* Ph.D. in Computer Science, University of California Santa Barbara, 2022
 * M.S. in Computer Science, University of California Santa Barbara, 2021
 * B.S. in Computer Science, University of Rochester, 2018
 
