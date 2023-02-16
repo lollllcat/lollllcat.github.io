@@ -4,7 +4,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-* A Prediction System Service\
+* [A Prediction System Service](https://dl.acm.org/doi/pdf/10.1145/3575693.3575714)\
 **Zhizhou Zhang**, Alvin Glova, Timothy Sherwood, and Jonathan Balkind. Proceedings of the International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2023.
 
 * [Establishing Cooperative Computation with Hardware Embassies](https://jbalkind.github.io/docs/glova-2022seed-embassy.pdf)\
