@@ -4,6 +4,9 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+* Blast from the Past: Least Expected Use (LEU) Cache Replacement with Statistical History\
+Sayak Chakraborti\*, **Zhizhou Zhang\***, Noah Bertram, Chen Ding, and Sandhya Dwarkadas. Proceddings of the International Symposium on Memory Management (ISMM) 2023. (\*Equal contribution).
+
 * [A Prediction System Service](https://dl.acm.org/doi/pdf/10.1145/3575693.3575714)\
 **Zhizhou Zhang**, Alvin Glova, Timothy Sherwood, and Jonathan Balkind. Proceedings of the International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2023.
 
@@ -20,4 +23,4 @@ Deeksha Dangwal, **Zhizhou Zhang**, Jedidiah R. Crandall, and Timothy Sherwood. 
 **Zhizhou Zhang**, Milind Chabbi, Adam Welc, and Timothy Sherwood. In 2021 USENIX Annual Technical Conference (USENIX ATC 21), pp. 939-955. 2021. [code](https://github.com/uber-research/GOCC)
 
 * [Fine-grained data usage analysis by access sampling: seeing the data that is not there](https://dl.acm.org/doi/abs/10.1145/3240302.3240425)\
-**Zhizhou Zhang**, Chencheng Ye, Rahman Lavaee, Ning Gu, and Chen Ding. In Proceedings of the International Symposium on Memory Systems, pp. 221-231. 2018.
+**Zhizhou Zhang**, Chencheng Ye, Rahman Lavaee, Ning Gu, and Chen Ding. In Proceedings of the International Symposium on Memory Systems (ISMM), pp. 221-231. 2018.
