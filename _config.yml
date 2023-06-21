@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Chris (Zhizhou) Zhang"
   avatar           : "chris_headshot.jpeg"
-  bio              : "PhD student at UC Santa Barbara"
+  bio              : "Software Engineer at Uber"
   location         : "California"
   employer         :
 #   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=Onvm2JcAAAAJ&hl=en"
-  email            : zhizhouzhang at ucsb.edu
+  email            : zzzhang at uber.com
 #   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
