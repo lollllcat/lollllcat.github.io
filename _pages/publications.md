@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 * [Blast from the Past: Least Expected Use (LEU) Cache Replacement with Statistical History](https://dl.acm.org/doi/10.1145/3591195.3595267)\
-Sayak Chakraborti\*, **Zhizhou Zhang\***, Noah Bertram, Chen Ding, and Sandhya Dwarkadas. Proceddings of the International Symposium on Memory Management (ISMM) 2023. (\*Equal contribution).
+Sayak Chakraborti\*, **Zhizhou Zhang\***, Noah Bertram, Chen Ding, and Sandhya Dwarkadas. Proceedings of the International Symposium on Memory Management (ISMM) 2023. (\*Equal contribution).
 
 * [A Prediction System Service](https://dl.acm.org/doi/pdf/10.1145/3575693.3575714)\
 **Zhizhou Zhang**, Alvin Glova, Timothy Sherwood, and Jonathan Balkind. Proceedings of the International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS) 2023.
