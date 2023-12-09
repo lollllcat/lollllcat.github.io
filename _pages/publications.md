@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 * [Early notice: GenAI-based Datarace Fix for Real-World Golang Programs](https://github.com/lollllcat/lollllcat.github.io/blob/master/files/genai_dr_mlsys.pdf)\
-Feiyang Jin, **Zhizhou Zhang**, Rajkishore Barik, Gautam Korlam, Milind Chabbi. Machine Learning for Systems Workshops at 37th NeurIPS 2023.
+Feiyang Jin, **Zhizhou Zhang**, Rajkishore Barik, Gautam Korlam, and Milind Chabbi. Machine Learning for Systems Workshops at 37th NeurIPS 2023.
 
 * [Blast from the Past: Least Expected Use (LEU) Cache Replacement with Statistical History](https://dl.acm.org/doi/10.1145/3591195.3595267)\
 Sayak Chakraborti\*, **Zhizhou Zhang\***, Noah Bertram, Chen Ding, and Sandhya Dwarkadas. Proceedings of the International Symposium on Memory Management (ISMM) 2023. (\*Equal contribution).
