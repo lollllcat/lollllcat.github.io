@@ -56,6 +56,7 @@ Education
   
 Service
 ======
+* Program Committee for 45th IEEE International Conference on Distributed Computing Systems ([ICDCS](https://icdcs2025.icdcs.org/programme-chairs/) 2025
 * Artifact Evaluation committee for IEEE/ACM International Symposium on Code Generation and Optimization ([CGO](https://conf.researchr.org/home/cgo-2024)) 2024
 * Artifact Evaluation committee for Principles and Practice of Parallel Programming ([PPoPP](https://ppopp24.sigplan.org/)) 2024
 * Peer reviewer for Software: Practice and Experience (SPE-23-0201) 2023
