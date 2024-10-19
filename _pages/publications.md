@@ -4,6 +4,12 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+* The Tale of Errors in Microservices\
+I-Ting Angelina Lee, **Zhizhou Zhang**, Abhishek Parwal, and Milind Chabbi. SIGMETRICS 2025. [data](https://zenodo.org/records/13947828)
+
+* [FixrLeak: GenAI-based Resource Leak Fix for Real-World Java Programs](https://github.com/lollllcat/lollllcat.github.io/blob/master/files/GenAI_resource_leak.pdf)\
+**Zhizhou Zhang**, Akshay Utture, Manu Sridharan, and Jens Palsberg. Machine Learning for Systems Workshop at 38th NeurIPS 2024.
+
 * [Early notice: GenAI-based Datarace Fix for Real-World Golang Programs](https://github.com/lollllcat/lollllcat.github.io/blob/master/files/genai_dr_mlsys.pdf)\
 Feiyang Jin, **Zhizhou Zhang**, Rajkishore Barik, Gautam Korlam, and Milind Chabbi. Machine Learning for Systems Workshops at 37th NeurIPS 2023.
 
