@@ -23,7 +23,7 @@ Sayak Chakraborti\*, **Zhizhou Zhang\***, Noah Bertram, Chen Ding, and Sandhya D
 Alvin Oliver Glova, Yukai Yang, Yiyao Wan, **Zhizhou Zhang**, George Michelogiannakis, Jonathan Balkind, and Timothy Sherwood. In 2022 International Symposium on Secure and Private Execution Environment Design (SEED).
 
 * [{CRISP}: Critical Path Analysis of {Large-Scale} Microservice Architectures](https://www.usenix.org/conference/atc22/presentation/zhang-zhizhou)\
-**Zhizhou Zhang**, Murali Krishna Ramanathan, Prithvi Raj, Abhishek Parwal, Timothy Sherwood, and Milind Chabbi. In 2022 USENIX Annual Technical Conference (USENIX ATC 22), pp. 655-672. 2022. [code](https://github.com/uber-research/CRISP). [blog](https://eng.uber.com/crisp-critical-path-analysis-for-microservice-architectures/).
+**Zhizhou Zhang**, Murali Krishna Ramanathan, Prithvi Raj, Abhishek Parwal, Timothy Sherwood, and Milind Chabbi. In 2022 USENIX Annual Technical Conference (USENIX ATC 22), pp. 655-672. 2022. [code](https://github.com/uber-research/CRISP). [blog](https://eng.uber.com/crisp-critical-path-analysis-for-microservice-architectures/). [data](https://zenodo.org/records/13956078).
 
 * [Context-Aware Privacy-Optimizing Address Tracing](https://ieeexplore.ieee.org/abstract/document/9604789/)\
 Deeksha Dangwal, **Zhizhou Zhang**, Jedidiah R. Crandall, and Timothy Sherwood. In 2021 International Symposium on Secure and Private Execution Environment Design (SEED), pp. 150-162. IEEE, 2021.
