@@ -1,0 +1,278 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 18b5500ea8bf..4a1aacbc9b93 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -415,3 +415,8 @@
+ 547	x32	pwritev2		compat_sys_pwritev64v2
+ # This is the end of the legacy x32 range.  Numbers 548 and above are
+ # not special and are not to be used for x32-specific syscalls.
++548	common	query			sys_query
++549 common  update          sys_update
++550 common  vdso_query      sys_vdso_query
++551 common  vdso_update     sys_vdso_update
++552 common  vdso_clear      sys_vdso_clear
+\ No newline at end of file
+diff --git a/arch/x86/entry/vdso/vclock_gettime.c b/arch/x86/entry/vdso/vclock_gettime.c
+index 7d70935b6758..7995f07cbd59 100644
+--- a/arch/x86/entry/vdso/vclock_gettime.c
++++ b/arch/x86/entry/vdso/vclock_gettime.c
+@@ -33,6 +33,53 @@ __kernel_old_time_t __vdso_time(__kernel_old_time_t *t)
+ __kernel_old_time_t time(__kernel_old_time_t *t)	__attribute__((weak, alias("__vdso_time")));
+ 
+ 
++// Perceptron paramaters
++#define PERC_ENTRIES 64   //Upto 12-bit addressing in hashed perceptron
++#define PERC_FEATURES 4
++#define PERC_COUNTER_MAX 15 //-16 to +15: 5 bits counter
++#define PERC_THRESHOLD_HI -5
++#define PERC_THRESHOLD_LO -15
++#define POS_UPDT_THRESHOLD 90
++#define NEG_UPDT_THRESHOLD -80
++
++void get_perc_index(int *input, int len, int perc_set[PERC_FEATURES])
++{
++    unsigned pre_hash[PERC_FEATURES];
++	int i;
++    for (i = 0; i < len; i++)
++    {
++        pre_hash[i] = input[i];
++    }
++
++    for (i = 0; i < len; i++)
++    {
++        // perc_set[i] = (pre_hash[i]) % perc.PERC_DEPTH[i]; // Variable depths
++        perc_set[i] = (pre_hash[i]) % 32; // Variable depths
++    }
++}
++// extern struct vdso_data _vdso_data[CS_BASES] __attribute__((visibility("hidden")));
++notrace int __vdso_query(int* input, int len)
++{
++	// unsigned *ptr = (unsigned *)(&_vdso_data) + 0xBC;
++	// return *ptr;
++
++    int perc_set[PERC_FEATURES];
++    // Get the indexes in perc_set[]
++    get_perc_index(input, len, perc_set);
++
++    int sum = 0;
++	int i;
++    for (i = 0; i < len; i++)
++    {
++        sum += __arch_get_vdso_data()->perc[perc_set[i]][i];
++        // Calculate Sum
++    }
++    // Return the sum
++    return sum;
++
++	// return __arch_get_vdso_data()->weight[x];
++}
++
+ #if defined(CONFIG_X86_64) && !defined(BUILD_VDSO32_64)
+ /* both 64-bit and x32 use these */
+ extern int __vdso_clock_gettime(clockid_t clock, struct __kernel_timespec *ts);
+diff --git a/arch/x86/entry/vdso/vdso.lds.S b/arch/x86/entry/vdso/vdso.lds.S
+index 4bf48462fca7..afc00159584d 100644
+--- a/arch/x86/entry/vdso/vdso.lds.S
++++ b/arch/x86/entry/vdso/vdso.lds.S
+@@ -28,6 +28,7 @@ VERSION {
+ 		clock_getres;
+ 		__vdso_clock_getres;
+ 		__vdso_sgx_enter_enclave;
++		__vdso_query;
+ 	local: *;
+ 	};
+ }
+diff --git a/drivers/staging/media/atomisp/pci/hive_isp_css_common/host/input_system.c b/drivers/staging/media/atomisp/pci/hive_isp_css_common/host/input_system.c
+index 8e085dda0c18..c832021820dd 100644
+--- a/drivers/staging/media/atomisp/pci/hive_isp_css_common/host/input_system.c
++++ b/drivers/staging/media/atomisp/pci/hive_isp_css_common/host/input_system.c
+@@ -1646,6 +1646,7 @@ static input_system_err_t input_system_configure_channel_sensor(
+ 	default:
+ 		return INPUT_SYSTEM_ERR_PARAMETER_NOT_SUPPORTED;
+ 	}
++	return INPUT_SYSTEM_ERR_PARAMETER_NOT_SUPPORTED;
+ }
+ 
+ // Test flags and set structure.
+diff --git a/include/vdso/datapage.h b/include/vdso/datapage.h
+index 73eb622e7663..6d57ec355709 100644
+--- a/include/vdso/datapage.h
++++ b/include/vdso/datapage.h
+@@ -56,6 +56,25 @@ struct vdso_timestamp {
+ 	u64	nsec;
+ };
+ 
++// Perceptron paramaters
++#define PERC_ENTRIES 64   //Upto 12-bit addressing in hashed perceptron
++#define PERC_FEATURES 4
++#define PERC_COUNTER_MAX 15 //-16 to +15: 5 bits counter
++#define PERC_THRESHOLD_HI -5
++#define PERC_THRESHOLD_LO -15
++#define POS_UPDT_THRESHOLD 90
++#define NEG_UPDT_THRESHOLD -80
++
++struct Perceptron
++{
++    /* data */
++    // Perc Weights
++    int perc_weights[PERC_ENTRIES][PERC_FEATURES];
++
++    // CONST depths for different features
++    // int PERC_DEPTH[PERC_FEATURES];
++};
++
+ /**
+  * struct vdso_data - vdso datapage representation
+  * @seq:		timebase sequence counter
+@@ -105,7 +124,7 @@ struct vdso_data {
+ 	s32			tz_dsttime;
+ 	u32			hrtimer_res;
+ 	u32			__unused;
+-
++	int perc[PERC_ENTRIES][PERC_FEATURES];
+ 	struct arch_vdso_data	arch_data;
+ };
+ 
+diff --git a/kernel/sys.c b/kernel/sys.c
+index 8fdac0d90504..7b7e80627a77 100644
+--- a/kernel/sys.c
++++ b/kernel/sys.c
+@@ -264,6 +264,138 @@ SYSCALL_DEFINE3(setpriority, int, which, int, who, int, niceval)
+ 	return error;
+ }
+ 
++// Perceptron paramaters
++#define PERC_ENTRIES 64   //Upto 12-bit addressing in hashed perceptron
++#define PERC_FEATURES 4
++#define PERC_COUNTER_MAX 15 //-16 to +15: 5 bits counter
++#define PERC_THRESHOLD_HI -5
++#define PERC_THRESHOLD_LO -15
++#define POS_UPDT_THRESHOLD 90
++#define NEG_UPDT_THRESHOLD -80
++
++void get_perc_index(int *input, int len, int perc_set[PERC_FEATURES])
++{
++    unsigned pre_hash[PERC_FEATURES];
++	int i;
++    for (i = 0; i < len; i++)
++    {
++        pre_hash[i] = input[i];
++    }
++
++    for (i = 0; i < len; i++)
++    {
++        // perc_set[i] = (pre_hash[i]) % perc.PERC_DEPTH[i]; // Variable depths
++        perc_set[i] = (pre_hash[i]) % 32; // Variable depths
++    }
++}
++
++#include <vdso/datapage.h>
++// #include <asm/vvar.h>
++// #include <asm/vdso/vsyscall.h>
++extern struct vdso_data _vdso_data[CS_BASES] __attribute__((visibility("hidden")));
++int number = 0;
++SYSCALL_DEFINE3(query, int, in1, int, in2, int, len) {
++
++    int perc_set[PERC_FEATURES];
++	int input[2] = {in1, in2};
++    // Get the indexes in perc_set[]
++    get_perc_index(input, len, perc_set);
++
++    int sum = 0;
++	int i;
++    for (i = 0; i < len; i++)
++    {
++        // sum += *(&_vdso_data[0].__unused);
++		sum += *(&_vdso_data[0].perc[perc_set[i]][i]);
++        // Calculate Sum
++    }
++    // Return the sum
++    return sum;
++	// return *(&_vdso_data[0].weight[idx]);
++}
++
++SYSCALL_DEFINE5(update, int, in1, int, in2, int, len, int, direction, int, perc_sum) {
++	// *(&_vdso_data[0].weight[idx]) = num;
++	int perc_set[PERC_FEATURES];
++	int input[2] = {in1, in2};
++    // Get the perceptron indexes
++    get_perc_index(input, len, perc_set);
++
++    int sum = 0;
++    // Restore the sum that led to the prediction
++    sum = perc_sum;
++	int i;
++    if (!direction)
++    { // direction = 1 means the sum was in the correct direction,
++      // 0 means it was in the wrong direction
++        // Prediction wrong
++        for (i = 0; i < len; i++)
++        {
++            if (sum >= PERC_THRESHOLD_HI)
++            {
++                // Prediction was to prefectch --
++                // so decrement counters
++                if (*(&_vdso_data[0].perc[perc_set[i]][i]) >
++                    -1 * (PERC_COUNTER_MAX + 1))
++                    *(&_vdso_data[0].perc[perc_set[i]][i]) -= 1;
++            }
++            if (sum < PERC_THRESHOLD_HI)
++            {
++                // Prediction was to not prefetch -- so increment counters
++                if (*(&_vdso_data[0].perc[perc_set[i]][i]) < PERC_COUNTER_MAX)
++                    *(&_vdso_data[0].perc[perc_set[i]][i]) += 1;
++            }
++        }
++    }
++    if (direction && sum > NEG_UPDT_THRESHOLD && sum < POS_UPDT_THRESHOLD)
++    {
++        // Prediction correct but sum not 'saturated' enough
++        for (i = 0; i < len; i++)
++        {
++            if (sum >= PERC_THRESHOLD_HI)
++            {
++                // Prediction was to prefetch -- so increment counters
++                if (*(&_vdso_data[0].perc[perc_set[i]][i]) < PERC_COUNTER_MAX)
++                    *(&_vdso_data[0].perc[perc_set[i]][i]) += 1;
++            }
++            if (sum < PERC_THRESHOLD_HI)
++            {
++                // Prediction was to not prefetch --
++                // so decrement counters
++                if (*(&_vdso_data[0].perc[perc_set[i]][i])
++                    > -1 * (PERC_COUNTER_MAX + 1))
++                    *(&_vdso_data[0].perc[perc_set[i]][i]) -= 1;
++            }
++        }
++    }
++	return 0;
++}
++// #include <sys/auxv.h>
++SYSCALL_DEFINE1(vdso_query, int, idx) {
++	// unsigned *ptr = (unsigned *)(&_vdso_data) + 0xBC;
++	return *(&_vdso_data[0].__unused);
++}
++
++SYSCALL_DEFINE2(vdso_update, int, num, int, idx) {
++	// unsigned *ptr = (unsigned *) (&_vdso_data) + 0xBC;
++	// *ptr = num;
++	*(&_vdso_data[0].__unused) = num;
++
++	return 0;
++}
++#define PERC_ENTRIES 64  
++#define PERC_FEATURES 4
++SYSCALL_DEFINE0(vdso_clear) {
++	int i, j;
++	for (i = 0; i < PERC_ENTRIES; i++) {
++		for (j = 0; j < PERC_FEATURES; j++) {
++			_vdso_data[0].perc[i][j] = 0;
++		}
++	}
++	return 0;
++}
++
++
+ /*
+  * Ugh. To avoid negative return values, "getpriority()" will
+  * not return the normal nice-value, but a negated value that
