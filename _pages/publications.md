@@ -4,7 +4,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-* The Tale of Errors in Microservices\
+* [The Tale of Errors in Microservices](https://dl.acm.org/doi/10.1145/3700436)\
 I-Ting Angelina Lee, **Zhizhou Zhang**, Abhishek Parwal, and Milind Chabbi. SIGMETRICS 2025. [data](https://zenodo.org/records/13947828)
 
 * [FixrLeak: GenAI-based Resource Leak Fix for Real-World Java Programs](https://github.com/lollllcat/lollllcat.github.io/blob/master/files/GenAI_resource_leak.pdf)\
