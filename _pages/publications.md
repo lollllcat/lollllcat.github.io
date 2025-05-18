@@ -4,6 +4,9 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+* [DR. FIX: Automatically Fixing Data Races at Industry Scale](https://doi.org/10.1145/3729265)\
+Farnaz Behrang, **Zhizhou Zhang**, Georgian-Vlad Saioc, Peng Liu, and Milind Chabbi. PLDI 2025. [repo](https://github.com/uber-research/drfix) [preprint](https://arxiv.org/pdf/2504.15637)
+
 * [The Tale of Errors in Microservices](https://dl.acm.org/doi/10.1145/3700436)\
 I-Ting Angelina Lee, **Zhizhou Zhang**, Abhishek Parwal, and Milind Chabbi. SIGMETRICS 2025. [data](https://zenodo.org/records/13947828)
 
