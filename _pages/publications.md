@@ -4,6 +4,9 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+* [Using SBPF to Accelerate Kernel Memory Access From Userspace](https://arxiv.org/pdf/2506.22632)\
+Boming Kong, **Zhizhou Zhang**, and Jonathan Balkind. arXiv preprint 2025.
+
 * [DR. FIX: Automatically Fixing Data Races at Industry Scale](https://doi.org/10.1145/3729265)\
 Farnaz Behrang, **Zhizhou Zhang**, Georgian-Vlad Saioc, Peng Liu, and Milind Chabbi. PLDI 2025. [repo](https://github.com/uber-research/drfix)
 
