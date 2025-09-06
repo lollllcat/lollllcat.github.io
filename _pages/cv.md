@@ -56,14 +56,5 @@ Education
   
 Service
 ======
-* Peer reviewer for Journal of Big Data 2025.
-* Peer reviewer for Computer Standards & Interfaces CSI-D-24-00741
+* Reviewer for The 4th Deep Learning for Code Workshop ([DL4C](https://dl4c.github.io/))
 * Program Committee for 45th IEEE International Conference on Distributed Computing Systems ([ICDCS](https://icdcs2025.icdcs.org/programme-chairs/)) 2025 Deployed/Emergent Applications & Infrastructures Track
-* Artifact Evaluation committee for IEEE/ACM International Symposium on Code Generation and Optimization ([CGO](https://conf.researchr.org/home/cgo-2024)) 2024
-* Artifact Evaluation committee for Principles and Practice of Parallel Programming ([PPoPP](https://ppopp24.sigplan.org/)) 2024
-* Peer reviewer for Software: Practice and Experience (SPE-23-0201) 2023
-* Peer reviewer for Software: Practice and Experience (SPE-23-0196) 2023
-* Artifact Evaluation committee for Principles and Practice of Parallel Programming ([PPoPP](https://ppopp23.sigplan.org/)) 2023
-* Peer reviewer for Software: Practice and Experience (SPE-22-0289) 2022
-* Artifact Evaluation committee for Principles and Practice of Parallel Programming ([PPoPP](https://ppopp22.sigplan.org/)) 2022
-* Artifact Evaluation committee for Principles and Practice of Parallel Programming ([PPoPP](https://ppopp21.sigplan.org/)) 2021
