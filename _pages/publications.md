@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 * [Learning Architectural Cache Simulator Behaviour](https://github.com/lollllcat/lollllcat.github.io/blob/master/files/NeuralCacheSim%20(1).pdf)\
-Pranjali Jain, Meiru Han, **Zhizhou Zhang**, Brandon Lee, and Jonathan Balkind. IISWC 2025.
+Pranjali Jain, Meiru Han, **Zhizhou Zhang**, Brandon Lee, and Jonathan Balkind. IISWC 2025. [repo](https://zenodo.org/records/16935884). Best paper nominee, distinguished artifact.
 
 * [Using SBPF to Accelerate Kernel Memory Access From Userspace](https://arxiv.org/pdf/2506.22632)\
 Boming Kong, **Zhizhou Zhang**, and Jonathan Balkind. arXiv preprint 2025.
