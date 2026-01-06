@@ -56,6 +56,8 @@ Education
   
 Service
 ======
+* Shadow PC for [SIGMETRICS 2026](https://www.sigmetrics.org/sigmetrics2026/shadowpc.html) 
+* Program Committee for for 46th IEEE International Conference on Distributed Computing Systems ([ICDCS](https://icdcs2026.icdcs.org/)) 2026 Deployed/Emergent Applications & Infrastructures, Digital Twins Computing Systems
 * ERC for [MLSys 2026](https://mlsys.org/)
 * Reviewer for The 4th Deep Learning for Code Workshop ([DL4C](https://dl4c.github.io/))
 * Program Committee for 45th IEEE International Conference on Distributed Computing Systems ([ICDCS](https://icdcs2025.icdcs.org/programme-chairs/)) 2025 Deployed/Emergent Applications & Infrastructures Track
