@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chris Zhang's personal website"
+title                    : "Chris Zhang"
 title_separator          : "-"
 name                     : &name "Chris Zhang"
-description              : &description "personal description"
+description              : &description "Programming systems, compilers, microservices, and ML-assisted program repair"
 url                      : https://lollllcat.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lollllcat.github.io"
