@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Chris (Zhizhou) Zhang"
-excerpt: "Continuous profiling, software performance, and automated program repair at Uber"
+excerpt: "Perf Factory at Uber: performance analysis and optimization through profiling, compilers, distributed tracing, and agent workflows"
 author_profile: true
 redirect_from: 
   - /about/
@@ -53,7 +53,7 @@ redirect_from:
     display: grid;
     gap: 0.75rem;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
 
   .home-focus-item {
@@ -150,18 +150,16 @@ redirect_from:
 <p class="home-intro">
 I am Chris (Zhizhou) Zhang, 张之洲, a software engineer at Uber's
 Frontier Tech Labs (FTL).
-I work on continuous profiling, software performance, and automated program repair.
 </p>
 
-Over the past two years, I've worked with colleagues at Uber and Grafana on
-always-on profiling infrastructure across Uber's 6,000+ services. The work includes
-deciding which instances to profile, keeping collection safe for production, and
-making profiles available to engineers and automated tools.
+My main focus is Perf Factory, an effort to automate performance analysis and
+optimization across Uber's services. The work brings together profiling,
+compiler optimizations, and distributed tracing.
 
 <div class="home-actions">
   <a href="/talks/">Talks</a>
   <a href="/publications/">Publications</a>
-  <a href="/cv/">CV</a>
+  <a href="/background/">Background</a>
   <a href="https://scholar.google.com/citations?user=Onvm2JcAAAAJ&hl=en">Google Scholar</a>
 </div>
 
@@ -169,18 +167,20 @@ making profiles available to engineers and automated tools.
   <h2>Current Work</h2>
   <div class="home-focus-grid">
     <div class="home-focus-item">
-      <strong>Continuous profiling</strong>
-      <span>Centralized sampling and collection for Go, Java, Python, and TypeScript services, with coverage for small services and controls to limit production risk.</span>
+      <strong>Profiling</strong>
+      <span>Always-on profiling across Uber's 6,000+ services, built with colleagues at Uber and Grafana, to understand CPU use, memory allocation, and lock contention.</span>
     </div>
     <div class="home-focus-item">
-      <strong>Performance optimization</strong>
-      <span>Using profiles to understand CPU use, memory allocation, and lock contention, and exploring program analysis and generative AI to propose and check fixes.</span>
+      <strong>Compiler optimization</strong>
+      <span>Using runtime profiles to guide compiler optimizations, including Go PGO, and integrating optimization into production build and deployment workflows.</span>
     </div>
     <div class="home-focus-item">
-      <strong>Automated program repair</strong>
-      <span>Combining program analysis with machine learning to find and fix data races, resource leaks, and other software defects.</span>
+      <strong>Distributed tracing</strong>
+      <span>Using traces and critical path analysis, as in CRISP, to identify which services and operations contribute to end-to-end latency.</span>
     </div>
   </div>
+  <p>I'm working on bringing these tools into agent workflows that investigate bottlenecks, propose optimizations, and check their effects on performance and program behavior.</p>
+  <p>I also work on automated program repair, combining program analysis and machine learning to find and fix data races, resource leaks, and other software defects.</p>
 </div>
 
 <div class="home-section">

@@ -1,25 +1,23 @@
 ---
 layout: single
-title: "CV"
-permalink: /cv/
+title: "Background"
+permalink: /background/
 author_profile: true
 redirect_from:
   - /resume
+  - /cv/
 ---
 
 {% include base_path %}
 
-## Current Work
-
-Software engineer at Uber's Frontier Tech Labs (FTL), working on continuous
-profiling, software performance, and automated program repair.
-
 ## Education
+
 * Ph.D. in Computer Science, University of California Santa Barbara, 2022
 * M.S. in Computer Science, University of California Santa Barbara, 2021
 * B.S. in Computer Science, University of Rochester, 2018
 
 ## Service
+
 * PC for 5th Deep Learning for Code Workshop ([DL4C](https://dl4c.github.io/))
 * PC for HPCA 2027
 * Program Committee for [EuroSys 2027](https://www.eurosys.org/)
