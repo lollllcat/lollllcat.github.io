@@ -49,26 +49,6 @@ redirect_from:
     margin-bottom: 0.75rem;
   }
 
-  .home-talk h3 {
-    font-size: 1em;
-    line-height: 1.45;
-    margin: 0.5rem 0 0.75rem;
-  }
-
-  .home-talk-meta,
-  .home-talk-recording {
-    color: #5b6876;
-    font-size: 0.8em;
-  }
-
-  .home-talk-meta {
-    margin-bottom: 0.5rem;
-  }
-
-  .home-talk-recording {
-    margin-bottom: 0;
-  }
-
   .home-focus-grid {
     display: grid;
     gap: 0.75rem;
@@ -179,7 +159,7 @@ deciding which instances to profile, keeping collection safe for production, and
 making profiles available to engineers and automated tools.
 
 <div class="home-actions">
-  <a href="#observabilitycon-2026">ObservabilityCON 2026 talk</a>
+  <a href="/talks/">Talks</a>
   <a href="/publications/">Publications</a>
   <a href="/cv/">CV</a>
   <a href="https://scholar.google.com/citations?user=Onvm2JcAAAAJ&hl=en">Google Scholar</a>
@@ -201,16 +181,6 @@ making profiles available to engineers and automated tools.
       <span>Combining program analysis with machine learning to find and fix data races, resource leaks, and other software defects.</span>
     </div>
   </div>
-</div>
-
-<div class="home-section home-talk" id="observabilitycon-2026">
-  <h2>Talk</h2>
-  <p class="home-talk-meta">ObservabilityCON &middot; <time datetime="2026-10-20">October 20, 2026</time> &middot; San Francisco</p>
-  <h3><a href="https://grafana.com/events/observabilitycon/2026/agenda/automating-efficiency-at-Uber-scale-with-Grafana-Cloud-Profiles-and-Assistant/">Automating efficiency at Uber scale with Grafana Cloud Profiles and Assistant</a></h3>
-  <p>I shared how we built always-on profiling at Uber: why random sampling can miss smaller services, how a central control plane manages collection, and what we learned from using profiles to investigate performance problems.</p>
-  <p>The talk also covers Grafana Assistant, profile access through MCP, and a design for an automated optimization loop that combines program analysis, generative AI, and checks for equivalent behavior.</p>
-  <!-- Replace this note with a link when the recording is available. -->
-  <p class="home-talk-recording">Recording coming soon.</p>
 </div>
 
 <div class="home-section">

@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -9,66 +9,17 @@ redirect_from:
 
 {% include base_path %}
 
-Current Work
-======
-Software engineer, Programming Systems team, Uber.
+## Current Work
 
-I work on continuous profiling, software performance, and automated program repair.
-With colleagues at Uber and Grafana, I've worked on always-on profiling
-infrastructure across Uber's 6,000+ services, including sampling, collection
-controls, and access to profiles for engineers and automated tools.
+Software engineer on Uber's Programming Systems team, working on continuous
+profiling, software performance, and automated program repair.
 
-Talks
-======
-* [Automating efficiency at Uber scale with Grafana Cloud Profiles and Assistant](https://grafana.com/events/observabilitycon/2026/agenda/automating-efficiency-at-Uber-scale-with-Grafana-Cloud-Profiles-and-Assistant/), ObservabilityCON, San Francisco, October 20, 2026. Recording coming soon.
-
-Education
-======
+## Education
 * Ph.D. in Computer Science, University of California Santa Barbara, 2022
 * M.S. in Computer Science, University of California Santa Barbara, 2021
 * B.S. in Computer Science, University of Rochester, 2018
 
-<!-- Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub -->
-  
-<!-- Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3 -->
-
-<!-- Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-  
-<!-- Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul> -->
-  
-<!-- Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-  
-Service
-======
+## Service
 * PC for 5th Deep Learning for Code Workshop ([DL4C](https://dl4c.github.io/))
 * PC for HPCA 2027
 * Program Committee for [EuroSys 2027](https://www.eurosys.org/)
