@@ -9,6 +9,19 @@ redirect_from:
 
 {% include base_path %}
 
+Current Work
+======
+Software engineer, Programming Systems team, Uber.
+
+I work on continuous profiling, software performance, and automated program repair.
+With colleagues at Uber and Grafana, I've worked on always-on profiling
+infrastructure across Uber's 6,000+ services, including sampling, collection
+controls, and access to profiles for engineers and automated tools.
+
+Talks
+======
+* [Automating efficiency at Uber scale with Grafana Cloud Profiles and Assistant](https://grafana.com/events/observabilitycon/2026/agenda/automating-efficiency-at-Uber-scale-with-Grafana-Cloud-Profiles-and-Assistant/), ObservabilityCON, San Francisco, October 20, 2026. Recording coming soon.
+
 Education
 ======
 * Ph.D. in Computer Science, University of California Santa Barbara, 2022

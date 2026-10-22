@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Chris (Zhizhou) Zhang"
-excerpt: "Programming systems, compilers, microservices, and ML-assisted program repair"
+excerpt: "Continuous profiling, software performance, and automated program repair at Uber"
 author_profile: true
 redirect_from: 
   - /about/
@@ -47,6 +47,26 @@ redirect_from:
   .home-section h2 {
     font-size: 1.05em;
     margin-bottom: 0.75rem;
+  }
+
+  .home-talk h3 {
+    font-size: 1em;
+    line-height: 1.45;
+    margin: 0.5rem 0 0.75rem;
+  }
+
+  .home-talk-meta,
+  .home-talk-recording {
+    color: #5b6876;
+    font-size: 0.8em;
+  }
+
+  .home-talk-meta {
+    margin-bottom: 0.5rem;
+  }
+
+  .home-talk-recording {
+    margin-bottom: 0;
   }
 
   .home-focus-grid {
@@ -150,40 +170,47 @@ redirect_from:
 <p class="home-intro">
 I am Chris (Zhizhou) Zhang, 张之洲, a software engineer on Uber's
 <a href="https://www.uber.com/us/en/about/science/">Programming Systems team</a>.
-My work sits at the intersection of programming systems, compilers, operating
-systems, microservices, and ML-assisted program repair.
+I work on continuous profiling, software performance, and automated program repair.
 </p>
 
+Over the past two years, I've worked with colleagues at Uber and Grafana on
+always-on profiling infrastructure across Uber's 6,000+ services. The work includes
+deciding which instances to profile, keeping collection safe for production, and
+making profiles available to engineers and automated tools.
+
 <div class="home-actions">
+  <a href="#observabilitycon-2026">ObservabilityCON 2026 talk</a>
   <a href="/publications/">Publications</a>
   <a href="/cv/">CV</a>
   <a href="https://scholar.google.com/citations?user=Onvm2JcAAAAJ&hl=en">Google Scholar</a>
 </div>
 
-I received my Ph.D. in Computer Science from
-[UC Santa Barbara](https://www.cs.ucsb.edu/), where I was advised by
-[Prof. Tim Sherwood](https://www.arch.cs.ucsb.edu/prof-sherwood) at
-[ArchLab](https://www.arch.cs.ucsb.edu/) and closely collaborated with
-[Prof. Jonathan Balkind](https://jbalkind.github.io/). Before that, I received
-my undergraduate degree from the University of Rochester, where I worked with
-[Prof. Chen Ding](https://www.cs.rochester.edu/~cding/).
-
 <div class="home-section">
   <h2>Current Work</h2>
   <div class="home-focus-grid">
     <div class="home-focus-item">
-      <strong>Programming systems</strong>
-      <span>Tools and runtime techniques for making real-world software faster, safer, and easier to debug.</span>
+      <strong>Continuous profiling</strong>
+      <span>Centralized sampling and collection for Go, Java, Python, and TypeScript services, with coverage for small services and controls to limit production risk.</span>
     </div>
     <div class="home-focus-item">
-      <strong>ML-assisted program repair</strong>
-      <span>Automated fixes for data races, resource leaks, and other production software defects.</span>
+      <strong>Performance optimization</strong>
+      <span>Using profiles to understand CPU use, memory allocation, and lock contention, and exploring program analysis and generative AI to propose and check fixes.</span>
     </div>
     <div class="home-focus-item">
-      <strong>Microservices</strong>
-      <span>Performance, reliability, and error analysis for large-scale service architectures.</span>
+      <strong>Automated program repair</strong>
+      <span>Combining program analysis with machine learning to find and fix data races, resource leaks, and other software defects.</span>
     </div>
   </div>
+</div>
+
+<div class="home-section home-talk" id="observabilitycon-2026">
+  <h2>Talk</h2>
+  <p class="home-talk-meta">ObservabilityCON &middot; <time datetime="2026-10-20">October 20, 2026</time> &middot; San Francisco</p>
+  <h3><a href="https://grafana.com/events/observabilitycon/2026/agenda/automating-efficiency-at-Uber-scale-with-Grafana-Cloud-Profiles-and-Assistant/">Automating efficiency at Uber scale with Grafana Cloud Profiles and Assistant</a></h3>
+  <p>I shared how we built always-on profiling at Uber: why random sampling can miss smaller services, how a central control plane manages collection, and what we learned from using profiles to investigate performance problems.</p>
+  <p>The talk also covers Grafana Assistant, profile access through MCP, and a design for an automated optimization loop that combines program analysis, generative AI, and checks for equivalent behavior.</p>
+  <!-- Replace this note with a link when the recording is available. -->
+  <p class="home-talk-recording">Recording coming soon.</p>
 </div>
 
 <div class="home-section">
@@ -230,6 +257,18 @@ my undergraduate degree from the University of Rochester, where I worked with
       <em>USENIX ATC 2021</em>
     </li>
   </ul>
+</div>
+
+<div class="home-section" markdown="1">
+## Background
+
+I received my Ph.D. in Computer Science from
+[UC Santa Barbara](https://www.cs.ucsb.edu/), where I was advised by
+[Prof. Tim Sherwood](https://www.arch.cs.ucsb.edu/prof-sherwood) at
+[ArchLab](https://www.arch.cs.ucsb.edu/) and closely collaborated with
+[Prof. Jonathan Balkind](https://jbalkind.github.io/). Before that, I received
+my undergraduate degree from the University of Rochester, where I worked with
+[Prof. Chen Ding](https://www.cs.rochester.edu/~cding/).
 </div>
 
 <div class="home-section">
