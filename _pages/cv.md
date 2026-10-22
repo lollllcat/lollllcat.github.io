@@ -11,7 +11,7 @@ redirect_from:
 
 ## Current Work
 
-Software engineer on Uber's Programming Systems team, working on continuous
+Software engineer at Uber's Frontier Tech Labs (FTL), working on continuous
 profiling, software performance, and automated program repair.
 
 ## Education

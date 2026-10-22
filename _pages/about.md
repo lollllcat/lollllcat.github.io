@@ -148,8 +148,8 @@ redirect_from:
 </style>
 
 <p class="home-intro">
-I am Chris (Zhizhou) Zhang, 张之洲, a software engineer on Uber's
-<a href="https://www.uber.com/us/en/about/science/">Programming Systems team</a>.
+I am Chris (Zhizhou) Zhang, 张之洲, a software engineer at Uber's
+Frontier Tech Labs (FTL).
 I work on continuous profiling, software performance, and automated program repair.
 </p>
 
