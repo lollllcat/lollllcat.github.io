@@ -14,7 +14,7 @@ Boming Kong, **Zhizhou Zhang**, and Jonathan Balkind. arXiv preprint 2025.
 Farnaz Behrang, **Zhizhou Zhang**, Georgian-Vlad Saioc, Peng Liu, and Milind Chabbi. PLDI 2025. [repo](https://github.com/uber-research/drfix)
 
 * [The Tale of Errors in Microservices](https://dl.acm.org/doi/10.1145/3700436)\
-I-Ting Angelina Lee, **Zhizhou Zhang**, Abhishek Parwal, and Milind Chabbi. SIGMETRICS 2025. [data](https://zenodo.org/records/13947828)
+I-Ting Angelina Lee, **Zhizhou Zhang**, Abhishek Parwal, and Milind Chabbi. SIGMETRICS 2025. [code](https://github.com/uber-research/CRISP). [data](https://zenodo.org/records/13947828)
 
 * [FixrLeak: GenAI-based Resource Leak Fix for Real-World Java Programs](https://github.com/lollllcat/lollllcat.github.io/blob/master/files/GenAI_resource_leak.pdf)\
 **Zhizhou Zhang**, Akshay Utture, Manu Sridharan, and Jens Palsberg. Machine Learning for Systems Workshop at 38th NeurIPS 2024.

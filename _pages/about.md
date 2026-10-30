@@ -216,7 +216,7 @@ compiler optimizations, and distributed tracing.
     </li>
     <li>
       <a href="https://dl.acm.org/doi/10.1145/3700436">The Tale of Errors in Microservices</a><br>
-      <em>SIGMETRICS 2025</em>
+      <em>SIGMETRICS 2025</em> · <a href="https://github.com/uber-research/CRISP">code</a>
     </li>
     <li>
       <a href="https://www.usenix.org/conference/atc22/presentation/zhang-zhizhou">CRISP: Critical Path Analysis of Large-Scale Microservice Architectures</a><br>
