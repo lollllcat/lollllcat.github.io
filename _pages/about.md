@@ -220,11 +220,11 @@ compiler optimizations, and distributed tracing.
     </li>
     <li>
       <a href="https://www.usenix.org/conference/atc22/presentation/zhang-zhizhou">CRISP: Critical Path Analysis of Large-Scale Microservice Architectures</a><br>
-      <em>USENIX ATC 2022</em>
+      <em>USENIX ATC 2022</em> · <a href="https://www.youtube.com/watch?v=Pgat0dM743I">video</a>
     </li>
     <li>
       <a href="https://www.usenix.org/conference/atc21/presentation/zhang-zhizhou">Optimistic Concurrency Control for Real-world Go Programs</a><br>
-      <em>USENIX ATC 2021</em>
+      <em>USENIX ATC 2021</em> · <a href="https://www.youtube.com/watch?v=nFuGTks1OTg">video</a>
     </li>
   </ul>
 </div>
