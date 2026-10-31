@@ -18,11 +18,19 @@ redirect_from:
 
 ## Service
 
-* PC for 5th Deep Learning for Code Workshop ([DL4C](https://dl4c.github.io/))
-* PC for HPCA 2027
-* Program Committee for [EuroSys 2027](https://www.eurosys.org/)
-* Shadow PC for [SIGMETRICS 2026](https://www.sigmetrics.org/sigmetrics2026/shadowpc.html) 
-* Program Committee for 46th IEEE International Conference on Distributed Computing Systems ([ICDCS](https://icdcs2026.icdcs.org/)) 2026 Deployed/Emergent Applications & Infrastructures, Digital Twins Computing Systems
-* ERC for [MLSys 2026](https://mlsys.org/)
-* Reviewer for The 4th Deep Learning for Code Workshop ([DL4C](https://dl4c.github.io/))
-* Program Committee for 45th IEEE International Conference on Distributed Computing Systems ([ICDCS](https://icdcs2025.icdcs.org/programme-chairs/)) 2025 Deployed/Emergent Applications & Infrastructures Track
+### 2027
+
+* [HPCA 2027](https://hpca2027.hotcrp.com/users/pc) — Program Committee
+* [EuroSys 2027](https://2027.eurosys.org/) — Program Committee
+
+### 2026
+
+* [ICDCS 2026](https://icdcs2026.icdcs.org/) — Program Committee, Deployed/Emergent Applications & Infrastructures and Digital Twins Computing Systems tracks
+* [SIGMETRICS 2026](https://www.sigmetrics.org/sigmetrics2026/shadowpc.html) — Shadow Program Committee
+* [MLSys 2026](https://mlsys.org/) — External Review Committee
+* [5th Deep Learning for Code Workshop (DL4C, ICML 2026)](https://dl4c.github.io/) — Program Committee
+
+### 2025
+
+* [ICDCS 2025](https://icdcs2025.icdcs.org/programme-chairs/) — Program Committee, Deployed/Emergent Applications & Infrastructures track
+* [4th Deep Learning for Code Workshop (DL4C, NeurIPS 2025)](https://dl4c.github.io/) — Reviewer
