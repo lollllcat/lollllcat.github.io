@@ -5,6 +5,13 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  scroll-padding-top: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {

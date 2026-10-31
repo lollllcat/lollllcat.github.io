@@ -13,7 +13,7 @@ name                     : &name "Chris Zhang"
 description              : &description "Perf Factory at Uber: performance analysis and optimization through profiling, compilers, distributed tracing, and agent workflows"
 url                      : https://lollllcat.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "lollllcat.github.io"
+repository               : "lollllcat/lollllcat.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -62,7 +62,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "chris-observabilitycon-2026.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -144,6 +144,7 @@ exclude:
   - log
   - node_modules
   - package.json
+  - package-lock.json
   - tmp
   - vendor
 keep_files:

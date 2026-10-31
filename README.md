@@ -4,6 +4,14 @@ I think I've got things running smoothly and fixed some major bugs, but feel fre
 
 ### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
 
+## JavaScript maintenance
+
+Run `npm ci` followed by `npm run build:js` after changing JavaScript dependencies
+or sources. Commit the regenerated `assets/js/main.min.js` with the source changes;
+GitHub Pages serves this checked-in bundle without running npm. The lockfile keeps
+dependency versions reproducible. Smooth scrolling uses CSS and respects the
+browser's reduced-motion preference.
+
 # Instructions
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
