@@ -9,7 +9,7 @@ location: "San Francisco"
 excerpt: "Building always-on profiling across Uber's 6,000+ services: sampling, production safety, and using profiles to investigate performance problems."
 session_url: "https://grafana.com/events/observabilitycon/2026/agenda/automating-efficiency-at-Uber-scale-with-Grafana-Cloud-Profiles-and-Assistant/"
 slides_url: "/files/observabilitycon-2026-always-on-profiling.pdf"
-recording_url:
+recording_url: "https://www.youtube.com/watch?v=GMB0vznyuuo"
 share: false
 ---
 
