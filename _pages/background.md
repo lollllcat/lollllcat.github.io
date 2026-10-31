@@ -21,7 +21,7 @@ redirect_from:
 ### 2027
 
 * [HPCA 2027](https://hpca2027.hotcrp.com/users/pc) — Program Committee
-* [EuroSys 2027](https://2027.eurosys.org/) — Program Committee
+* [EuroSys 2027](https://2027.eurosys.org/pc.html) — Program Committee
 
 ### 2026
 
