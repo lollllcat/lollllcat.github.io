@@ -1,37 +1,19 @@
 ---
-layout: archive
+layout: single
 title: "Sitemap"
 permalink: /sitemap/
 author_profile: true
 ---
 
-{% include base_path %}
+* [Home]({{ '/' | relative_url }})
+* [Publications]({{ '/publications/' | relative_url }})
+* [Talks]({{ '/talks/' | relative_url }})
+* [Background]({{ '/background/' | relative_url }})
 
-A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+## Work
 
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
+* [Profiling and compiler optimizations]({{ '/work/profiling-and-optimization/' | relative_url }})
+* [Distributed tracing]({{ '/work/distributed-tracing/' | relative_url }})
+* [Automated program repair]({{ '/work/program-repair/' | relative_url }})
 
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-{% endfor %}
+An [XML sitemap]({{ '/sitemap.xml' | relative_url }}) is also available.

@@ -4,7 +4,16 @@ I think I've got things running smoothly and fixed some major bugs, but feel fre
 
 ### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
 
-## JavaScript maintenance
+## Website maintenance
+
+The homepage links to short work summaries in `_pages/work-*.md`. Talk recording
+and slide URLs live in `_talks/`; the featured homepage talk uses that metadata.
+Template examples are excluded from publication in `_config.yml`.
+
+Pages that need equation rendering can opt in with `mathjax: true` in their
+front matter. Other pages do not load MathJax.
+
+### JavaScript maintenance
 
 Run `npm ci` followed by `npm run build:js` after changing JavaScript dependencies
 or sources. Commit the regenerated `assets/js/main.min.js` with the source changes;

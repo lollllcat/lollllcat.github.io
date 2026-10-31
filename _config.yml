@@ -10,14 +10,14 @@ locale                   : "en-US"
 title                    : "Chris Zhang"
 title_separator          : "-"
 name                     : &name "Chris Zhang"
-description              : &description "Perf Factory at Uber: performance analysis and optimization through profiling, compilers, distributed tracing, and agent workflows"
+description              : &description "Software engineer at Uber working on profiling, compiler optimizations, distributed tracing, and automated program repair."
 url                      : https://lollllcat.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lollllcat/lollllcat.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # Enable only when a tracking ID is configured.
   google:
     tracking_id          :
 
@@ -87,7 +87,7 @@ author:
   employer         :
 #   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=Onvm2JcAAAAJ&hl=en"
-  email            : zzzhang at uber.com
+  email            : zzzhang@uber.com
 #   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -147,6 +147,30 @@ exclude:
   - package-lock.json
   - tmp
   - vendor
+  # Keep the template examples in source, but do not publish them.
+  - _posts
+  - _publications
+  - _teaching
+  - _portfolio
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/teaching.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - markdown_generator
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - files/paper1.pdf
+  - files/paper2.pdf
+  - files/paper3.pdf
 keep_files:
   - .git
   - .svn

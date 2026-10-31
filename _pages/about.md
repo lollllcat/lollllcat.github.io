@@ -1,41 +1,58 @@
 ---
 permalink: /
-title: "Chris (Zhizhou) Zhang"
-excerpt: "Perf Factory at Uber: performance analysis and optimization through profiling, compilers, distributed tracing, and agent workflows"
+title: "Chris (Zhizhou) Zhang · 张之洲"
+excerpt: "Software engineer at Uber working on profiling, compiler optimizations, distributed tracing, and automated program repair."
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
 <style>
-  .home-intro {
-    margin-top: 0.4rem;
-    font-size: 1.08em;
-    line-height: 1.75;
+  .page__title {
+    word-break: keep-all;
   }
 
-  .home-actions {
+  .home-intro {
+    margin-top: 0.5rem;
+    font-size: 1.05em;
+    line-height: 1.65;
+  }
+
+  .home-featured {
+    background: #f7f9fc;
+    border: 1px solid #dfe5ec;
+    border-left: 3px solid #1f5f8b;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+    padding: 1rem 1.15rem;
+  }
+
+  .home-featured .home-featured-meta {
+    color: #5b6876;
+    font-size: 0.85em;
+    margin: 0 0 0.5rem;
+  }
+
+  .home-featured h2 {
+    font-size: 1.12em;
+    margin: 0 0 0.6rem;
+  }
+
+  .home-featured p {
+    font-size: 0.95em;
+    margin-bottom: 0.7rem;
+  }
+
+  .home-featured .home-resource-links {
+    margin-bottom: 0;
+  }
+
+  .home-resource-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.55rem;
-    margin: 1.25rem 0 1.8rem;
-  }
-
-  .home-actions a {
-    border: 1px solid #d7dee8;
-    border-radius: 6px;
-    color: #263241;
-    font-size: 0.78em;
-    font-weight: 700;
-    letter-spacing: 0;
-    padding: 0.45rem 0.7rem;
-    text-decoration: none;
-  }
-
-  .home-actions a:hover {
-    background: #f4f7fb;
-    color: #1f5f8b;
+    gap: 0.4rem 1rem;
+    font-size: 0.9em;
   }
 
   .home-section {
@@ -45,95 +62,35 @@ redirect_from:
   }
 
   .home-section h2 {
-    font-size: 1.05em;
-    margin-bottom: 0.75rem;
+    font-size: 1.1em;
+    margin: 0 0 0.9rem;
   }
 
-  .home-focus-grid {
+  .home-work-grid {
     display: grid;
-    gap: 0.75rem;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    margin: 1rem 0;
-  }
-
-  .home-focus-item {
-    background: #f7f9fc;
-    border: 1px solid #e3e9f0;
-    border-radius: 6px;
-    padding: 0.85rem 0.95rem;
-  }
-
-  .home-focus-item strong {
-    color: #263241;
-    display: block;
-    font-size: 0.88em;
-    margin-bottom: 0.3rem;
-  }
-
-  .home-focus-item span {
-    color: #5b6876;
-    display: block;
-    font-size: 0.78em;
-    line-height: 1.45;
-  }
-
-  .home-engineering-grid {
-    display: grid;
-    gap: 0.75rem;
+    gap: 0.9rem;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    margin-top: 1rem;
   }
 
-  .page__content a.home-engineering-item {
+  .home-work-item {
     border: 1px solid #dfe5ec;
     border-radius: 6px;
-    color: #263241;
-    display: flex;
-    flex-direction: column;
-    min-height: 190px;
     padding: 1rem;
-    text-decoration: none;
-    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
   }
 
-  .page__content a.home-engineering-item:hover {
-    border-color: #8fb2c7;
-    box-shadow: 0 5px 16px rgba(38, 50, 65, 0.09);
-    color: #263241;
-    transform: translateY(-2px);
+  .home-work-item h3 {
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0 0 0.65rem;
   }
 
-  .home-engineering-item time {
-    color: #74808c;
-    font-size: 0.7em;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  .home-engineering-item h3 {
-    font-size: 0.9em;
-    line-height: 1.35;
-    margin: 0.55rem 0 0.45rem;
-  }
-
-  .home-engineering-item p {
-    color: #5b6876;
-    font-size: 0.76em;
-    line-height: 1.5;
+  .home-work-item p {
+    font-size: 1em;
+    line-height: 1.55;
     margin: 0;
   }
 
-  .home-engineering-link {
-    color: #1f5f8b;
-    font-size: 0.72em;
-    font-weight: 700;
-    margin-top: auto;
-    padding-top: 0.8rem;
-    text-decoration: underline;
-  }
-
   .home-publications {
-    margin-left: 0;
     padding-left: 1.1rem;
   }
 
@@ -148,62 +105,51 @@ redirect_from:
 </style>
 
 <p class="home-intro">
-I am Chris (Zhizhou) Zhang, 张之洲, a software engineer at Uber's
-Frontier Tech Labs (FTL).
+I'm a software engineer in Uber's Frontier Tech Labs (FTL). I work on performance
+analysis, compiler optimizations, and automated program repair.
 </p>
 
-My main focus is Perf Factory, an effort to automate performance analysis and
-optimization across Uber's services. The work brings together profiling,
-compiler optimizations, and distributed tracing.
+My current focus is Perf Factory, where we're working on automating performance
+analysis and optimization across Uber's services. This includes collecting
+profiles, finding bottlenecks, and checking the effects of code changes.
 
-<div class="home-actions">
-  <a href="/talks/">Talks</a>
-  <a href="/publications/">Publications</a>
-  <a href="/background/">Background</a>
-  <a href="https://scholar.google.com/citations?user=Onvm2JcAAAAJ&hl=en">Google Scholar</a>
-</div>
-
-<div class="home-section">
-  <h2>Current Work</h2>
-  <div class="home-focus-grid">
-    <div class="home-focus-item">
-      <strong>Profiling</strong>
-      <span>Always-on profiling across Uber's 6,000+ services, built with colleagues at Uber and Grafana, to understand CPU use, memory allocation, and lock contention.</span>
-    </div>
-    <div class="home-focus-item">
-      <strong>Compiler optimization</strong>
-      <span>Using runtime profiles to guide compiler optimizations, including Go PGO, and integrating optimization into production build and deployment workflows.</span>
-    </div>
-    <div class="home-focus-item">
-      <strong>Distributed tracing</strong>
-      <span>Using traces and critical path analysis, as in CRISP, to identify which services and operations contribute to end-to-end latency.</span>
-    </div>
-  </div>
-  <p>I'm working on bringing these tools into agent workflows that investigate bottlenecks, propose optimizations, and check their effects on performance and program behavior.</p>
-  <p>I also work on automated program repair, combining program analysis and machine learning to find and fix data races, resource leaks, and other software defects.</p>
-</div>
+{% assign featured_talk = site.talks | where: "permalink", "/talks/observabilitycon-2026/" | first %}
+{% if featured_talk %}
+<aside class="home-featured" aria-labelledby="featured-talk-title">
+  <p class="home-featured-meta">{{ featured_talk.venue }} · {{ featured_talk.date | date: "%B %-d" }}</p>
+  <h2 id="featured-talk-title">Profiling at Uber scale</h2>
+  <p>I talk about building always-on profiling across Uber's 6,000+ services with
+  colleagues at Uber and Grafana, and how we use profiles to investigate
+  performance problems.</p>
+  <p class="home-resource-links">
+    {% if featured_talk.recording_url %}<a href="{{ featured_talk.recording_url }}">Watch the talk</a>{% endif %}
+    {% if featured_talk.slides_url %}<a href="{{ featured_talk.slides_url | relative_url }}">Slides (PDF)</a>{% endif %}
+    <a href="{{ featured_talk.url | relative_url }}">Talk details</a>
+  </p>
+</aside>
+{% endif %}
 
 <div class="home-section">
-  <h2>Engineering</h2>
-  <div class="home-engineering-grid">
-    <a class="home-engineering-item" href="https://www.uber.com/us/en/blog/fixrleak-fixing-java-resource-leaks-with-genai/">
-      <time datetime="2025-05-01">May 2025</time>
-      <h3>FixrLeak: Fixing Java Resource Leaks with GenAI</h3>
-      <p>Combining AST analysis with generative AI to detect and repair resource leaks across Uber's Java codebase.</p>
-      <span class="home-engineering-link">Read on Uber Engineering &rarr;</span>
-    </a>
-    <a class="home-engineering-item" href="https://www.uber.com/us/en/blog/automating-efficiency-of-go-programs-with-pgo/">
-      <time datetime="2025-03-13">March 2025</time>
-      <h3>Automating Efficiency of Go Programs with Profile-Guided Optimizations</h3>
-      <p>Deploying continuous profile-guided optimization for Go services while keeping production build times practical.</p>
-      <span class="home-engineering-link">Read on Uber Engineering &rarr;</span>
-    </a>
-    <a class="home-engineering-item" href="https://www.uber.com/us/en/blog/crisp-critical-path-analysis-for-microservice-architectures/">
-      <time datetime="2021-11-18">November 2021</time>
-      <h3>CRISP: Critical Path Analysis for Microservice Architectures</h3>
-      <p>Finding and visualizing the services that contribute most to end-to-end latency in complex distributed traces.</p>
-      <span class="home-engineering-link">Read on Uber Engineering &rarr;</span>
-    </a>
+  <h2>Work</h2>
+  <div class="home-work-grid">
+    <article class="home-work-item">
+      <h3><a href="{{ '/work/profiling-and-optimization/' | relative_url }}">Profiling and compiler optimizations</a></h3>
+      <p>I work on collecting production profiles and using them to guide
+      optimization. This includes profiling across Uber's services and integrating
+      Go PGO into build and deployment workflows.</p>
+    </article>
+    <article class="home-work-item">
+      <h3><a href="{{ '/work/distributed-tracing/' | relative_url }}">Distributed tracing</a></h3>
+      <p>With CRISP, we analyze request traces to find the operations that
+      contribute to end-to-end latency. Related work studies how internal RPC
+      errors affect latency even when a request succeeds.</p>
+    </article>
+    <article class="home-work-item">
+      <h3><a href="{{ '/work/program-repair/' | relative_url }}">Automated program repair</a></h3>
+      <p>I work on using program analysis and machine learning to fix software
+      defects. This includes DR. FIX for data races in Go and FixrLeak for resource
+      leaks in Java.</p>
+    </article>
   </div>
 </div>
 
@@ -227,6 +173,7 @@ compiler optimizations, and distributed tracing.
       <em>USENIX ATC 2021</em> · <a href="https://www.youtube.com/watch?v=nFuGTks1OTg">video</a>
     </li>
   </ul>
+  <p><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
 </div>
 
 <div class="home-section" markdown="1">
@@ -239,6 +186,8 @@ I received my Ph.D. in Computer Science from
 [Prof. Jonathan Balkind](https://jbalkind.github.io/). Before that, I received
 my undergraduate degree from the University of Rochester, where I worked with
 [Prof. Chen Ding](https://www.cs.rochester.edu/~cding/).
+
+[Education and service]({{ '/background/' | relative_url }})
 </div>
 
 <div class="home-section">
