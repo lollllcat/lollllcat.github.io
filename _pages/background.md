@@ -20,6 +20,7 @@ redirect_from:
 
 ### 2027
 
+* [SIGMETRICS 2027](https://www.sigmetrics.org/sigmetrics2027/pages/program_committee.html) — Program Committee
 * [HPCA 2027](https://hpca2027.hotcrp.com/users/pc) — Program Committee
 * [EuroSys 2027](https://2027.eurosys.org/pc.html) — Program Committee
 
